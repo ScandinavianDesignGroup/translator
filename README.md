@@ -1,7 +1,8 @@
-I18N
+Translator
 ==========
 
-This is a simple library to aid in translating text client side
+This is a simple library to aid in translating text client side.
+As such, the name i18n.min.js is slightly misleading. For now.
 
 ### Single-shot translations
 You need to specify the translations:
@@ -39,8 +40,7 @@ You can also provide a fallback if the translation was not found:
 ### Translating whole pages
 
 By using the attribute 'data-translation' on your HTML elements, you specify
-what tag should be used to replace the text value within them:
-
+what tag should be used to translate the text value within them:
 
     <h1 data-translation="heading">This is urdu</h1>
     
@@ -65,4 +65,5 @@ Closure Compiler Service and running the tests
 
 ### TODO
 
-Remove the jQuery dependency
+* Provide "full" i18n capabilities, not just text translation
+* Remove the (rather unnecessary) jQuery dependency
